@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_calculator: phony || .
 
 build CMakeFiles/calculator.dir/main.cpp.obj: CXX_COMPILER__calculator_unscanned_Release C$:/Users/sethw/Documents/Programming/Cpp$ Projects/calculator/main.cpp || cmake_object_order_depends_target_calculator
   DEP_FILE = CMakeFiles\calculator.dir\main.cpp.obj.d
-  FLAGS = -static-libstdc++ -static-libgcc -O3 -DNDEBUG -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\calculator.dir
   OBJECT_FILE_DIR = CMakeFiles\calculator.dir
 
@@ -64,7 +64,7 @@ build CMakeFiles/calculator.dir/main.cpp.obj: CXX_COMPILER__calculator_unscanned
 # Link the executable calculator.exe
 
 build calculator.exe: CXX_EXECUTABLE_LINKER__calculator_Release CMakeFiles/calculator.dir/main.cpp.obj
-  FLAGS = -static-libstdc++ -static-libgcc -O3 -DNDEBUG
+  FLAGS = -O3 -DNDEBUG
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\calculator.dir
   POST_BUILD = cd .
